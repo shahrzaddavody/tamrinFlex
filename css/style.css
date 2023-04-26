@@ -11,7 +11,7 @@ html{
 }
 
 .container{
-max-width: 80rem;
+width: 80%;
 margin-right: auto;
 margin-left: auto;
 padding-right: 1rem;
@@ -19,45 +19,25 @@ padding-left: 1rem;
 
 
 }
-
-
+ /*-------------*/
+ /*Header TheEnd*/
+/*-------------*/ 
  .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
-
-
  }
 
 
 .nav{
 display: flex;
 align-items: center;
-
-
 }
-
-
-
-.nav-logo{
-
-}
-
-
-
-.nav-logo__img{
-
-}
-
 .menu{
-
 list-style-type: none;
 padding-left: 0;
 margin: 0;
 display: flex;
-
-
 }
 
 
@@ -69,8 +49,6 @@ display: flex;
 .menu-link{
     text-decoration: none;
     color:black
-
-
 }
 
 
@@ -92,46 +70,34 @@ display: flex;
     display: none;
     cursor: pointer;
 }
-
-
-.main-continer{
-
-}
-
+ /*-------------*/
+ /*Header TheEnd*/
+/*-------------*/
+/*-------------*/
+ /*Main Start*/
+/*-------------*/
 .main-content{
     display: flex;
-
 }
-
 .main-left{
 flex-basis: 50%;
 margin-top: 6rem;
-
 }
-
 .main-right{
 flex-basis: 50%;
 margin-top: 6rem;
-
 }
-
-
 .text-works{
     max-width:  23rem;
 }
 
 
-.text{
-
-}
-
-
 .text-one{
-    color: darkgrey;
+ color: darkgrey;
 line-height: 2rem;
 }
 
-.contac-us{
+.contact-us{
     color:white;
     background: green;
     padding: 0.4rem;
@@ -140,12 +106,10 @@ line-height: 2rem;
     align-items: center;
     border-radius: 0.2rem;
 
-
 }
 
 
-.butten{
-
+.btn-work{
     color:white;
     background: blue;
     padding: 0.4rem;
@@ -153,15 +117,12 @@ line-height: 2rem;
     justify-content: center;
     align-items: center;
     border-radius: 0.2rem;
-
-
+    margin-left: 1rem;
 }
 
 
 .works{
     text-align: center;
-
-
 }
 
 .workes-text{
@@ -244,21 +205,21 @@ margin: 0 auto;
 }
 
 
-.comment{
-    
 
-}
 
 .comennt-continer{
-    display: flex;
-    justify-content: space-around;
+    
     margin-top: 5rem;
 }
 
+.titleContainer{
+    display: flex;
+    justify-content: space-around;
+}
 .basic-title{
     background: white;
-    width: 15rem;
-    height: 11rem;
+    width: 30%;
+    height: auto;
     border-radius: 0.5rem;
 }
 
@@ -281,13 +242,6 @@ padding: 1rem;
 line-height: 1rem;
 }
 
-.coment-tex1{
-
-}‍
-
-.texet{
-
-}
 
 .image-info{
     margin-left: 1.5rem;
@@ -312,7 +266,6 @@ line-height: 1rem;
 .continer-profile{
    
     text-align: center;
-    padding: 0rem 10rem;
    
 
 }
@@ -378,13 +331,12 @@ line-height: 1rem;
 
 .footer_text{
     background: #1458be;
-    padding: 3rem 0;
+    padding: 3rem ;
 }
 
 
 
 .continer-one{
-    margin-top: 2rem;
     display: flex;
     justify-content: space-around;
 }
@@ -423,7 +375,7 @@ border: none;
 
 .newse-letter{
     background: white;
-    flex-basis: 18rem;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -473,7 +425,7 @@ border: none;
 
 @media only screen and (max-width: 992px) {
     .container {
-        max-width: 85%;
+        max-width: 90%;
 
     }
 
@@ -508,10 +460,12 @@ border: none;
     .main-content{
         flex-direction: column-reverse;
     }
-
+    .main-right{
+        display: flex;
+        justify-content: center;
+    }
     .main-left{
-        margin-left: 10rem;
-    margin-top: 1rem;
+     
     }
 
 
@@ -529,13 +483,14 @@ border: none;
     }
 
     .works-content{
-        margin-left: 8rem;
+        margin-left: auto;
+        margin-right: auto;
         flex-wrap: wrap;
     }
      .worke-wraper{
 
-        margin-top: 5rem;
-    margin-left: 4rem;
+     margin-right: auto;
+     margin-left: auto;
 }
 
 
@@ -545,10 +500,25 @@ border: none;
 
 @media only screen and (max-width: 768px) {
     .container {
-        max-width:100%;
+        width:100%;
     }
     .comennt-continer{
+       display: flex;
+       justify-content: center; 
+        margin-top: 2.5rem;
+    }
+    .titleContainer{
         display: flex;
         flex-direction: column;
+     
+    }
+    .sectin-continering{
+        width: 100%;
+        height: auto;
+    }
+    .basic-title{
+        width: 100%;
+        margin-bottom: 1rem;
+        height: auto;
     }
 }
